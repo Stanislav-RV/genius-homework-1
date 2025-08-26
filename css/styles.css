@@ -1,0 +1,222 @@
+/* ==============================
+   ГЛОБАЛЬНЫЕ НАСТРОЙКИ
+   ============================== */
+:root {
+  --color-primary: #2b7fff; /* фирменный синий */
+  --color-dark: #011c44; /* тёмный синий */
+  --color-light: #ffffff; /* белый */
+}
+
+/* Сбрасываем только базовые стили, но оставляем контроль над отступами */
+body {
+  margin: 0; /* убираем стандартные поля браузера */
+  font-family: Arial, sans-serif;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  font-family: 'Roboto', sans-serif; /* основной текст */
+}
+
+/* ==============================
+   КОНТЕНТНЫЕ ОТСТУПЫ
+   ============================== */
+header,
+main,
+footer {
+  padding-left: 20px; /* отступ слева */
+  padding-right: 20px; /* отступ справа */
+}
+
+/* ==============================
+   СПИСКИ
+   ============================== */
+ul {
+  list-style-type: none; /* убираем маркеры */
+  margin: 0;
+  padding-left: 20px; /* возвращаем отступ слева */
+}
+
+/* ==============================
+   КНОПКА
+   ============================== */
+.button {
+  color: var(--color-light);
+  background-color: var(--color-primary);
+  border: 2px solid transparent;
+  border-radius: 32px;
+  padding: 16px 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  border-color: var(--color-primary);
+}
+
+/* ==============================
+   МЕНЮ
+   ============================== */
+.menu {
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+.menu:hover {
+  color: var(--color-primary);
+}
+
+/* ==============================
+   ТЕКСТ
+   ============================== */
+/* контейнер заголовка */
+.hero-title .accent {
+  display: inline-block;
+  line-height: 1;
+}
+.accent--second {
+  margin-top: -18px;
+} /* подбери значение под макет */
+
+.hero-title {
+  margin: 0 0 24px;
+  max-width: 529px; /* как в Figma, чтобы перенос совпал */
+}
+
+/* верхняя маленькая строка */
+.hero-title__lead {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px; /* подгони под макет (в Figma ~18px) */
+  line-height: 1.2;
+  color: var(--color-dark); /* тёмный/серый, НЕ синий */
+  margin-bottom: 8px;
+}
+
+/* большие синие слова */
+.hero-title .accent {
+  display: block; /* каждая на своей строке */
+  font-family: 'Play', sans-serif; /* шрифт из макета */
+  font-weight: 700;
+  font-size: 140px; /* из Figma */
+  line-height: 0.8; /* из Figma */
+  color: var(--color-primary); /* синий */
+  text-transform: capitalize; /* как у тебя было */
+}
+
+.hero-subtitle {
+  font-family: 'Roboto', sans-serif; /* основной текст */
+  font-weight: 700;
+  font-size: 64px;
+  color: var(--color-dark);
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle .accent {
+  font-family: 'Play', sans-serif; /* акцентный шрифт */
+  font-weight: 700; /* Bold */
+  font-size: 64px;
+  color: var(--color-primary); /* синий */
+  /* text-transform: capitalize;  // если хочешь автоматом ставить первую букву заглавной */
+}
+
+/* Заголовок блока преимуществ */
+.title-adv {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 64px;
+  color: var(--color-dark); /* #011c44 */
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 0 32px;
+}
+
+.title-adv-accent {
+  color: var(--color-primary); /* #2b7fff */
+}
+
+.procedures-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: var(--color-dark);
+  text-align: center;
+  margin: 0 0 32px;
+}
+
+.procedures-title-accent {
+  color: var(--color-primary); /* фирменный синий */
+  font-weight: 700; /* тоже Roboto Bold */
+}
+
+.contact-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: var(--color-dark);
+  text-align: center;
+  margin: 0 0 32px;
+}
+
+.contact-title-accent {
+  color: var(--color-primary); /* фирменный синий */
+  font-weight: 700; /* тоже Roboto Bold */
+}
+
+/* ==============================
+   ФУТЕР
+   ============================== */
+.site-footer {
+  background: var(--color-dark);
+  color: var(--color-light);
+  padding: 40px 20px; /* чтобы контент не лип к краям */
+}
+
+.footer-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-inner a {
+  color: var(--color-light);
+  text-decoration: none;
+}
+
+.footer-inner a:hover {
+  color: var(--color-primary);
+}
+
+.legal {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+/* Типографика */
+.h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.1;
+  font-size: clamp(32px, 4.8vw, 56px);
+  margin: 0 0 12px;
+}
+.h2 {
+  font-weight: 700;
+  font-size: clamp(26px, 3.6vw, 36px);
+  margin: 0 0 12px;
+}
+.h3 {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0 0 8px;
+}
