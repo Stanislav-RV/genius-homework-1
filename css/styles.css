@@ -59,12 +59,34 @@ ul {
   border-color: var(--color-primary);
 }
 
+.hero-note {
+  font-size: 14px; /* уменьшенный размер */
+  line-height: 1.4; /* чтобы текст легко читался */
+  color: var(--color-dark);
+  margin-top: 8px; /* отступ сверху от кнопки */
+}
+
+/* Навигация */
+nav ul {
+  display: flex; /* включаем flex */
+  justify-content: center; /* выравниваем по центру */
+  gap: 40px; /* равные отступы между пунктами */
+  list-style: none; /* убираем точки списка */
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0; /* убираем лишние отступы */
+}
+
 /* ==============================
    МЕНЮ
    ============================== */
 .menu {
   color: var(--color-dark);
   text-decoration: none;
+  font-size: 18px;
 }
 
 .menu:hover {
@@ -86,6 +108,7 @@ ul {
 .hero-title {
   margin: 0 0 24px;
   max-width: 529px; /* как в Figma, чтобы перенос совпал */
+  font-size: 18px;
 }
 
 /* верхняя маленькая строка */
@@ -128,6 +151,13 @@ ul {
   /* text-transform: capitalize;  // если хочешь автоматом ставить первую букву заглавной */
 }
 
+.info-text {
+  font-size: 22px; /* уменьшаем шрифт */
+  line-height: 1.5; /* делаем читаемым */
+  color: var(--color-dark); /* оставляем тёмный */
+  margin-bottom: 12px; /* небольшой отступ между абзацами */
+}
+
 /* Заголовок блока преимуществ */
 .title-adv {
   font-family: 'Roboto', sans-serif;
@@ -143,6 +173,13 @@ ul {
   color: var(--color-primary); /* #2b7fff */
 }
 
+.title-adv-info {
+  font-size: 18px; /* уменьшаем шрифт */
+  line-height: 1.3; /* делаем читаемым */
+  color: var(--color-dark); /* оставляем тёмный */
+  margin-bottom: 12px; /* небольшой отступ между абзацами */
+}
+
 .procedures-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -155,6 +192,16 @@ ul {
 .procedures-title-accent {
   color: var(--color-primary); /* фирменный синий */
   font-weight: 700; /* тоже Roboto Bold */
+}
+
+.procedure-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 22px; /* как в Figma */
+  line-height: 1.2;
+  color: #fff; /* белый текст */
+  text-align: center;
+  margin-top: 12px; /* небольшой отступ от картинки */
 }
 
 .contact-title {
@@ -195,6 +242,12 @@ ul {
 
 .footer-inner a:hover {
   color: var(--color-primary);
+}
+
+.footer-image img {
+  max-height: 120px; /* регулируй под макет */
+  mix-blend-mode: normal;
+  opacity: 1;
 }
 
 .legal {
